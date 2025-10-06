@@ -11,7 +11,6 @@ chosen_word_chars = list(chosen_word)
 answer = []
 guess = ""
 guessIndex = 0
-iteration = 0
 
 for letter in chosen_word_chars:
   answer.append("_")
@@ -19,7 +18,6 @@ for letter in chosen_word_chars:
 while "".join(answer) != chosen_word:
   letterFound = False
   guess = input("Guess a letter: ").lower()
-  iteration += 1
 
   if not guess in list(chosen_word):
     print("Incorrect!")
